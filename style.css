@@ -56,6 +56,7 @@ li.main {
   font-size: 2em;
   font-family: Ariel;
   padding: 25px;
+  color: black;
 }
 
 li {
@@ -66,8 +67,10 @@ li {
 
 li.small {
   display: inline-block;
-  margin: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
   border: .5px solid black;
+  font-family: Ariel;
+  color: black;
 
 }
 
