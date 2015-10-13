@@ -1,6 +1,6 @@
 h4 {
   font-size: 1.5em;
-  font-family: Ariel, sans-serif;
+  font-family: Arial, sans-serif;
   font-style: italic;
 }
 
@@ -32,10 +32,25 @@ div#second-box {
 
 div#second-box li {
   font-size: 1.8em;
-  font-family: Ariel;
+  font-family: Arial;
   list-style-type: none;
   margin: 20px;
   display: block;
+}
+
+div#list-one {
+  font-size: 1em;
+  display: block;
+  float:left;
+  margin-bottom: 8px;
+
+}
+
+div#list-two {
+  font-size: 1em;
+  display: block;
+  float: left;
+  margin-bottom: 8px;
 }
 
 
@@ -52,25 +67,34 @@ div#third-box li {
   list-style-type: none;
 }
 
+div.song-title {
+  font-family: Arial;
+  font-size: 2em;
+  text-align: center;
+  margin: 25px;
+
+}
+
 li.main {
   font-size: 2em;
-  font-family: Ariel;
+  font-family: Arial;
   padding: 25px;
   color: black;
 }
 
 li {
-  font-family: Ariel;
+  font-family: Arial;
   font-size: 1em;
   display: block;
 }
 
 li.small {
-  display: inline-block;
-  margin: 0 5px 0 5px;
+  display: inline;
+  margin: 0 7px 0 7px;
   border: .5px solid black;
-  font-family: Ariel;
+  font-family: Arial;
   color: black;
+  text-align: center;
 
 }
 
