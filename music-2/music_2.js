@@ -66,27 +66,9 @@ songElement.innerHTML = string
  //    </select>
 
 
-
-
-
-
-
-
 // for (i = 0; i < Artist; i++) {
 // 	Artist[i] = Artist.replace("Sister Sledge", ZZ Top);
 // 	Artist[i] = Artist.replace("Joe Turner", Supertramp);
 // 	Artist[i] = Artist.replace("Indie Arie", Pink Floyd);
 // 	Artist[i] = Artist.replace("Edyie Gormet", Guns & Roses);
-
- 
-
-
-
-
-
-
-
-
-
-
 
