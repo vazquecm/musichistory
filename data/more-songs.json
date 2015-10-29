@@ -1,0 +1,29 @@
+{
+  "songs": [
+    {
+      "title": "Hello",
+      "artist": "Adele",
+      "album": "25"
+    },
+    {
+      "title": "The Man",
+      "artist": "Aloe Blacc",
+      "album": "Lift Your Spirit"      
+    },
+    {
+      "title": "Bahia",
+      "artist": "Angelique kidjo",
+      "album": "Black Ivory Soul"
+    },
+    {
+      "title": "Can't Buy Me Love",
+      "artist": "The Beatles",
+      "album": "1"
+    },
+    {
+      "title": "Try",
+      "artist": "Colbie Cailllat",
+      "album": "Gypsy Heart"
+    }
+  ]
+}

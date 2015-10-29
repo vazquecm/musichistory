@@ -1,19 +1,32 @@
 {
   "songs": [
     {
-      "title": "The Walk",
-      "artist": "Mayer Hawthorne",
-      "album": "How Do You Do"
+      "title": "Strength, Courage, & Wisdom",
+      "artist": "Indie Arie",
+      "album": "Acoustic Soul"
     },
     {
-      "title": "Medicine",
-      "artist": "Grace Potter",
-      "album": "Grace Potter and the Nocturnals"      
+      "title": "Free Me",
+      "artist": "Joss Stone",
+      "album": "Colour Me Free"      
     },
     {
-      "title": "Legs",
-      "artist": "ZZ Top",
-      "album": "Eliminator"      
+      "title": "Crystallize",
+      "artist": "Lindsey Sterling",
+      "album": "Lindsey Sterling"
+    },
+    {
+      "title": "Soulful Strut",
+      "artist": "Young-Holt Unlimited",
+      "album": "Young-Holt Unlimited"
+    },
+    {
+      "title": "Little Numbers",
+      "artist": "Boy",
+      "album": "Mutual Friends"
     }
   ]
 }
+
+
+
