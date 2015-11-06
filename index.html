@@ -4,41 +4,93 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+  <link href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
- <div id="heading">
-    <ul>
-      <li>Music</li>
-      <li><a href="#" id="link-add">Add Music</a></li>
-      <li><a href="#" id="link-list">List Music</a></li>
-    </ul>
-  </div>
 
-<!--    SECOND BOX   -->
+  <!-- using bootstrap for the fixed navigation bar and nav-pill boxes -->
 
-<div id="choices">
-    <li>Song Length:</li>
-        <input type="range" name="temperature-range" min="15" max="25" step="0.5" value="18.5">
-    <li>Artist:</li>
-        <input type="text" name="enter artist"></input>
-    <li>Song:</li>
-        <input type="text" name="enter song"></input>
-    <li>Album:</li>
-        <input type="text" name="enter album"></input>
-        <input type="button" value="Add"></input>
-</div>
+  <!-- <div class="container-fluid"> -->
+    <h2>MUSIC</h2>
+    <nav class="navbar navbar-default navbar-static-top">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Profile</a></li>
+        <li role="presentation" class="active"><a href="#" id="add-music">Add Music</a></li>
+        <li role="presentation" class="active"><a href="#" id="view-music">View Music</a></li>
+      </ul>
+    </nav>
 
-   <!--         THIRD BOX           -->
+  <!--    using the grid system in bootstrap for the form list adding music and also the form listing songs    -->
+    <div class="row">
+      <div class="col-md-4 enter-music">
+      <section>
+        <div id="left-side" class="my-hidden">
+          <h3>Adding Your Music</h3>
+          <ul>
+            <li>Artist:</li>
+            <input type="text" id="artist" name="enter artist"></input>
+            <li>Song:</li>
+            <input type="text" id="song" name="enter song"></input>
+            <li>Album:</li>
+            <input type="text" id="album" name="enter album"></input>
+            <input type="button" id="adding" value="Add"></input>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>        
+  <!-- List of songs.  2 more files in JSON to add more --> 
 
-   <div id="song-list"></div>
-    <button class="list">More Songs</button>
+      <div class="col-md-8 list-music">
+      <div id="right-side">
+        <section>
+          <h3>List of Songs</h3>
+          <div class="song-title">
+            <a href="https://soundcloud.com/jocelynalice/tracks">So Groovy</a>
+          </div>
+           <ul>
+            <li>Jocelyn Alice    </li>
+            <li>So Groovy  </li>
+            <li>Pop/Soul </li>
+            <input type="button" id="delete" value="Delete"></input>
+           </ul> 
+          <div class="song-title">
+            <a href="https://soundcloud.com/cleopatra-recs/sister-sledge-we-are-family">We Are Family</a>
+          </div>
+           <ul>
+            <li>Sister Sledge   </li>
+            <li>We Are Family   </li>
+            <li>Disco/Soul/Funk</li>
+            <input type="button" id="delete" value="Delete"></input>
+           </ul> 
+          <div class="song-title">
+            <a href="https://soundcloud.com/sonsrecords/big-joe-turner-shake-rattle-1">Shake Rattle & Roll</a>
+          </div>
+           <ul>
+            <li>Joe Turner   </li>
+            <li>Shake Rattle & Roll   </li>
+            <li>Rock & Roll</li>
+            <input type="button" id="delete" value="Delete"></input>
+           </ul>  
+          <div class="song-title">
+            <a href="https://soundcloud.com/user4885624/amy-winehouse-back-to-black">Back to Black</a>
+          </div>
+           <ul>
+            <li>Amy Winehouse   </li>
+            <li>Back to Black   </li>
+            <li>Soul </li>
+            <input type="button" id="delete" value="Delete"></input>
+           </ul>  
+          <input type="button" id="song-list" value="Add More Songs"></input>
+          </section>
+      </div> 
+    </div>
 
-   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- the start of script tags used -->
+
+  <!--  // <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
+   // <script src="./lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   // <script type="text/javascript" src="javascripts/script.js"></script>
+   -->  <script data-main="javascripts/entry.js" src="./lib/bower_components/requirejs/require.js"></script>
  </body>
-
-
-
-
- 

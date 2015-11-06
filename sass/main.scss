@@ -1,0 +1,87 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     768px;
+
+.myHidden {
+	display: none;
+}
+
+
+
+// body {
+//   font: 100% $font-stack;
+//   color: $primary-color;
+//   padding-top: 70px;
+// }
+
+
+
+
+// h4 {
+//   font-size: 1.5em;
+//   font-family:  Arial, sans-serif;
+//   font-style: italic;
+// }
+
+
+// div#choices {
+//   text-align: center;
+// }
+
+// div#choices li {
+//   font-size: 2em;
+//   font-family: Arial;
+//   list-style-type: none;
+// }
+
+
+// div#song-title li {
+//   list-style-type: none;
+// }
+
+// div.song-title {
+//   font-family: Arial;
+//   font-size: 1.5em;
+//   text-align: center;
+
+// }
+
+// li.main {
+//   font-size: 1.2em;
+//   font-family: Arial;
+//   color: black;
+// }
+
+// li {
+//   font-family: Arial;
+//   font-size: 1em;
+// }
+
+// li.small {
+//   display: inline;
+//   font-family: Arial;
+//   color: black;
+// }
+
+// button.list {
+// }
+
+// #song-title div:nth-child(even) {
+//   background-color: #FFF5EE;
+// }
+
+// #song-title div:nth-child(odd) {
+//   background-color: #F5FFFA;
+// }
+
+// .hidden {
+//   display: none;
+// }
+
+// .box-three {
+//   display: none;
+// }

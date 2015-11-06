@@ -1,17 +1,11 @@
-h4 {
+/*h3  {
   font-size: 1.5em;
-  font-family:  Arial, sans-serif;
-  font-style: italic;
+  font-family:  Arial;
+  text-decoration: none;
 }
 
-div#heading {
-  width: 1000px;
-  height: 40px;
-  /*color: white;*/
-  /*background-color: #E8D2FF;*/
-  /*margin: 15px 0 25px 80px;*/
-  /*border: 2px solid black;*/
-
+li.enterMusic {
+  text-decoration: none;
 }
 
 #heading li {
@@ -24,12 +18,12 @@ div#heading {
 }
 
 div#choices {
-  /*width: 400px;*/
-  /*height: 550px;*/
+  width: 400px;
+  height: 550px;
   margin: 40px 0 0 80px;
-  float: left;
+  float: left;*/
   /*background-color: #FFDFF7;*/
-  /*border: 2px solid black;*/
+/*  border: 2px solid black;
   text-align: center;
 }
 
@@ -42,40 +36,36 @@ div#choices li {
 }
 
 div#song-list {
-  /*width: 560px;*/
-  /*height: 550px;*/
+  width: 560px;
+  height: 550px;
   /*background-color: #FFDFF7;*/
-  margin: 40px 0 0 30px;
-  float: left;
-  /*border: 2px solid black;*/
-}
 
-div#song-title li {
+/*div#song-title li {
   list-style-type: none;
 }
-
-div.song-title {
+*/
+/*div.song-title {
   font-family: Arial;
   font-size: 1.5em;
   text-align: center;
   margin: 35px;
 
-}
+}*/
 
-li.main {
+/*li.main {
   font-size: 1.2em;
   font-family: Arial;
   padding: 25px;
   color: black;
-}
+}*/
 
-li {
+/*li {
   font-family: Arial;
   font-size: 1.em;
   display: block;
-}
+}*/
 
-li.small {
+/*li.small {
   display: inline;
   margin: 0 7px 0 7px;
   border: .5px solid black;
@@ -83,24 +73,24 @@ li.small {
   color: black;
   text-align: center;
 
-}
+}*/
 
-button.list {
+/*button.list {
   margin: 42px;
-}
+}*/
 
 /*#song-title div:nth-child(even) {
   background-color: #FFF5EE;
-}
+}*/
 
-#song-title div:nth-child(odd) {
+/*#song-title div:nth-child(odd) {
   background-color: #F5FFFA;
-}
+}*/
 
-.hidden {
+/*.hidden {
   display: none;
 }
 */
 /*.box-three {
-  display: none;
-}*/
+  display: none;*/
+/*}*/

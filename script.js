@@ -19,23 +19,24 @@ $(document).ready(function() {
 
 			songListContainer.append(songElementString); 
 			console.log(currentSong);
-		};
+		}
 	}
 
-	$.ajax({/**/
+	$.ajax({
 		url: "data/songs.json"
 	}).done(dataConverter);
 
 	
 });
 
+// Delete button on "list music" song row  //
+
 	$(document).on('click', '.delete', function(event) {
-		// event.target.remove(button class = );
+		event.target.remove("song-list");
 		console.log('click', event);
 });	
 
 
-// Delete button on "list music" song row  //
 
 
 
