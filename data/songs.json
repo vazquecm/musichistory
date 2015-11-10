@@ -1,32 +1,31 @@
 {
   "songs": [
     {
-      "title": "Strength, Courage, & Wisdom",
-      "artist": "Indie Arie",
-      "album": "Acoustic Soul"
+      "title": "Rolling In The Deep",
+      "artist": "Adele",
+      "album": "21"
+    },
+    {
+      "title": "Wake Me Up",
+      "artist": "Avicci",
+      "album": "Wake Me Up"      
+    },
+    {
+      "title": "Little Numbers",
+      "artist": "Mutual Friends",
+      "album": "Boy"
     },
     {
       "title": "Free Me",
       "artist": "Joss Stone",
-      "album": "Colour Me Free"      
+      "album": "Colour Me Free"
     },
     {
-      "title": "Crystallize",
-      "artist": "Lindsey Sterling",
-      "album": "Lindsey Sterling"
-    },
-    {
-      "title": "Soulful Strut",
-      "artist": "Young-Holt Unlimited",
-      "album": "Young-Holt Unlimited"
-    },
-    {
-      "title": "Little Numbers",
-      "artist": "Boy",
-      "album": "Mutual Friends"
+      "title": "Feeling Good",
+      "artist": "Michael Buble",
+      "album": "It's Time"
     }
   ]
 }
-
 
 

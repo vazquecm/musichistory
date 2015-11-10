@@ -1,0 +1,55 @@
+{
+  "songs": {
+    "hello": {
+      "title": "Hello", 
+      "artist": "Adele",
+      "album": "25"
+    },
+    "man": {
+      "title": "The Man", 
+      "artist": "Aloe Blacc",
+      "album": "Lift Your Spirit"
+    },
+    "bahia": {
+      "title": "Bahia", 
+      "artist": "Angelique Kidjo",
+      "album": "Black Ivory Soul"
+    },
+    "try": {
+      "title": "Try", 
+      "artist": "Colbie Caillat",
+      "album": "Gypsy Heart"
+    },
+    "love": {
+      "title": "Can't Buy Me Love",
+      "artist": "The Beatles",
+      "album": "1"
+    },
+    "deep": {
+      "title": "Rolling In The Deep",
+      "artist": "Adele",
+      "album": "21"
+    },
+    "wake": {
+      "title": "Wake Me Up",
+      "artist": "Avicci",
+      "album": "Wake Me Up"      
+    },
+    "numbers": {
+      "title": "Little Numbers",
+      "artist": "Mutual Friends",
+      "album": "Boy"
+    },
+    "free": {
+      "title": "Free Me",
+      "artist": "Joss Stone",
+      "album": "Colour Me Free"
+    },
+    "good": {
+      "title": "Feeling Good",
+      "artist": "Michael Buble",
+      "album": "It's Time"
+    }
+  }
+}    
+    

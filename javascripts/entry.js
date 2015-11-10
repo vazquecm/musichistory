@@ -11,23 +11,38 @@ requirejs.config({
 });
 
 require (
-  ["jquery", "script", "populate-songs", "get-more-songs"], 
-  function($, script, populateSongs, getMoreSongs) {
-  	populateSongs.getAjaxData(function (data) {
-  		console.log("working");
-  		require(['hbs!../templates/songs'], function(songTemplate) {
-			$("songList").html(songTemplate(data));
-		});
-  	});
-  // 	getMoreSongs.getAjaxData(function (data) {
-  // 		console.log("working too")
-  // 		require(['hbs!../templates/songs'], function(songTemplate) {
-		// 	$("songList").html(songTemplate(data));
-		// });
-  // 	})
+  ["script", "bootstrap"],
+  function(script, bootstrap){
 
-});
-///  you need the call back function working to insert here ///
+  }
+
+);
+
 console.log("Now binding the song array to the handlebar template");
+
+
+
+
+
+
+
+
+
+//   function($, script, populateSongs, getMoreSongs) {
+//   	populateSongs.getAjaxData(function (data) {
+//   		console.log("working");
+//   		require(['hbs!../templates/songs'], function(songTemplate) {
+// 			$("songList").html(songTemplate(data));
+// 		});
+//   	});
+//   // 	getMoreSongs.getAjaxData(function (data) {
+//   // 		console.log("working too")
+//   // 		require(['hbs!../templates/songs'], function(songTemplate) {
+// 		// 	$("songList").html(songTemplate(data));
+// 		// });
+//   // 	})
+
+// });
+///  you need the call back function working to insert here ///
 
 
