@@ -1,5 +1,5 @@
-define(["jquery", "populate-songs", "get-more-songs", "hbs"], 
-  function($, populateSongs, getMoreSongs, hbs) { 
+define(["jquery", "populate-songs", "hbs", "add-song"], 
+  function($, populateSongs, hbs, addSong) { 
 
 /// variables used in the functions below ///
 	var listMusicContainer = $("#songLists");
@@ -31,65 +31,27 @@ define(["jquery", "populate-songs", "get-more-songs", "hbs"],
 	});
 /// this function gathers data from the songs.json file and puts them into the DOM ///
 	function dataConverter(rawJSONData) {
-		var songArray = rawJSONData.songs;
 
-		var songElementString = "";
-
-		for (var i = 0; i < songArray.length; i++) {
-			var currentSong = songArray[i];
-
-			songElementString = "<div class='songTitle'> <li>";
-			songElementString += currentSong.title + "</li> </ul> <li>";
-			songElementString += currentSong.artist + "</li> <li>";
-			songElementString += currentSong.album + "</li></ul>";
-			songElementString += "<button class='delete'>Delete</button> </div>";
-
-			listMusicContainer.append(songElementString); 
-			console.log(currentSong);
-		}
+		require(["hbs!../templates/songs"], function(songTemplate){
+			$("#right-side").append(songTemplate(rawJSONData));
+			});
 	}
 
-/// this is the callback function for ajax ///		
+/// this is the callback function for ajax and also gets the data from the handlebars template  ///		
 	populateSongs.getAjaxData(dataConverter);
-	moreSongs.click(function() {
-		console.log("working");
-		getMoreSongs.getAjaxData(dataConverter);
-	});
-
-
-/// this function adds the second JSON file of songs to the DOM ///
-	function addingMoreSongs() {
-		var addSongHTML
-		addSongHTML = "<div class='songTitle'> <li>";
-		addSongHTML += song.val() + "</li> </ul> <li>";
-		addSongHTML += artist.val() + "</li> <li>";
-		addSongHTML += album.val() + "</li> </ul>";
-		addSongHTML += "<button class='delete'>Delete</button> </div>";
-
-		listMusicContainer.append(addSongHTML); 
-	}
-
+	
 /// the button at the end of the View Music form that adds more songs and also hides the add music form ///
-	addingButton.click(function() {
-		console.log("working");
-		addingMoreSongs();
-		addSection.hide();
-		viewSection.show();
-	})
-
- /// when the delete button is clicked, the row of title, artist, and album is deleted from the view music form ///
+	// $("#adding").click(function(){
+	// 	var addedArtist = $("#artist").val();
+	// 	var addedSong = $("#song").val();
+	// 	var addedAlbum = $("#album").val();
+	// 	console.log("user info", addedArtist, addedSong, addedAlbum);
+	// });
+ // /// when the delete button is clicked, the row of title, artist, and album is deleted from the view music form ///
 	function deleteSong() {
 		$(this).parent().remove();
 	}
 	$(document).on("click", ".delete", deleteSong);
-
-/// using handlebars expressions to insert data into the DOM ///
-
-
-
-
-
-
+		console.log("do i work?");	
 
 });
-

@@ -20,9 +20,8 @@
 
   <!--    using the grid system in bootstrap for the form list adding music and also the form listing songs -->   
      <div class="row"> 
-   <section>
       <div class="col-md-4 enter-music">
-        <div id="left-side" class="my-hidden">
+        <div id="left-side"><!--removed class="my-hidden"-->
           <h3>Adding Your Music</h3>
           <ul>
             <li>Artist:</li>
@@ -35,20 +34,17 @@
           </ul>
         </div>
       </div>
-    </section> -->
+
   <!-- </div>         -->
   <!-- List of songs.  two more files in JSON to add more songs to list --> 
       <div class="col-md-8 list-music">
-      <div id="right-side">
-        <section id="songLists">
-          </section>
-          <input type="button" id="song-list" value="Add More Songs"></input>
-      </div> 
-    </div>
+        <div id="right-side">
+        </div><!--closes class="right-side"-->
+      </div><!--closes list-music column -->
+
+    </div><!--closes row of whole page-->
 
 <!-- the start of script tags used -->
-
-  
  <script data-main="javascripts/entry.js" src="./lib/bower_components/requirejs/require.js"></script>
  </body>
  </html>

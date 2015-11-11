@@ -1,7 +1,5 @@
-@grid-columns :              12;
-@grid-gutter-width :         30px;
-@grid-float-breakpoint :     768px;
-.myHidden {
-  display: none; }
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef; }
 
 /*# sourceMappingURL=main.css.map */

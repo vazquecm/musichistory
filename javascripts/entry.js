@@ -12,11 +12,10 @@ requirejs.config({
 
 require (
   ["script", "bootstrap"],
-  function(script, bootstrap){
+  function(script, bootstrap) {
 
-  }
+});
 
-);
 
 console.log("Now binding the song array to the handlebar template");
 
@@ -43,6 +42,5 @@ console.log("Now binding the song array to the handlebar template");
 //   // 	})
 
 // });
-///  you need the call back function working to insert here ///
 
 
