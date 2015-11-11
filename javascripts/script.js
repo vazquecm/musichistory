@@ -2,17 +2,10 @@ define(["jquery", "populate-songs", "hbs", "add-song"],
   function($, populateSongs, hbs, addSong) { 
 
 /// variables used in the functions below ///
-	var listMusicContainer = $("#songLists");
-	var addButton = $ ("#add-music");
-	var viewButton = $ ("#view-music");
-	var addSection = $ ("#left-side");
-	var viewSection = $ ("#right-side");
-	var addingButton = $ ("#adding");
-	var listSection = $ ("#delete");
-	var moreSongs = $ ("#song-list");
-	var artist = $("#artist");
-	var song = $("#song");
-	var album = $("#album");
+	var addButton = $("#add-music");
+	var viewButton = $("#view-music");
+	var addSection = $("#left-side");
+	var viewSection = $("#right-side");
 	var deleteButton = $(".delete");
 
 /// this lets the view section stay on page when it is first opened and viewed //
@@ -29,29 +22,48 @@ define(["jquery", "populate-songs", "hbs", "add-song"],
 		addSection.hide();
 		viewSection.show();
 	});
-/// this function gathers data from the songs.json file and puts them into the DOM ///
+/// this function is waiting to be activated; recieves data from the songs.json file and puts them into the DOM ///
 	function dataConverter(rawJSONData) {
 
-		require(["hbs!../templates/songs"], function(songTemplate){
+/// this function gathers the data from handlebars and then adds it to the DOM & to the Firebase API ///
+		require(["hbs!../templates/songs"], function(songTemplate) {
 			$("#right-side").append(songTemplate(rawJSONData));
 			});
-	}
 
-/// this is the callback function for ajax and also gets the data from the handlebars template  ///		
+/// this function gathers all album names and put them into the option box for user selection //
+		require(["hbs!../templates/album"], function(songTemplate) {
+			$("#selectAlbum").append(songTemplate(rawJSONData));
+			console.log("select album", rawJSONData);
+		});
+
+/// this function gathers all artist names and puts them into the option box for the user to select ///
+		require(["hbs!../templates/artist"], function(songTemplate) {
+			$("#selectArtist").append(songTemplate(rawJSONData));
+			console.log("select artist", rawJSONData);
+		});
+
+}
+/// this is the action that activates the callback function for ajax and also gets the data from the handlebars template; the function is declared up above and is just waiting to be executed.  ///		
 	populateSongs.getAjaxData(dataConverter);
 	
-/// the button at the end of the View Music form that adds more songs and also hides the add music form ///
-	// $("#adding").click(function(){
-	// 	var addedArtist = $("#artist").val();
-	// 	var addedSong = $("#song").val();
-	// 	var addedAlbum = $("#album").val();
-	// 	console.log("user info", addedArtist, addedSong, addedAlbum);
-	// });
- // /// when the delete button is clicked, the row of title, artist, and album is deleted from the view music form ///
+ /// when the delete button is clicked, the row of title, artist, and album is deleted from the view music form ///
 	function deleteSong() {
 		$(this).parent().remove();
 	}
 	$(document).on("click", ".delete", deleteSong);
-		console.log("do i work?");	
+		console.log("do i work?");
+
+/// when the filter button is clicked the users selected choice populates in the DOM, no others should be seen ///
+	$("#filter").change(function() {
+		console.log("clicked");
+    var selectedArtist = $(this).find(selectedArtist).val();
+
+  $(document).change("click", filter, selected);  
+  })
+  	.trigger("change");
+
+
+
+
 
 });

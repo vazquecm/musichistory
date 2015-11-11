@@ -18,9 +18,10 @@
       </ul>
     </nav>
 
-  <!--    using the grid system in bootstrap for the form list adding music and also the form listing songs -->   
+  <!--    using the grid system in bootstrap for the form list adding music and also the form listing songs -->
+    <div class="container-fluid">   
      <div class="row"> 
-      <div class="col-md-4 enter-music">
+      <div class="col-md-6 enter-music">
         <div id="left-side"><!--removed class="my-hidden"-->
           <h3>Adding Your Music</h3>
           <ul>
@@ -35,14 +36,22 @@
         </div>
       </div>
 
+<!-- this section is for filtering by artist and song, the user picks and then just that artist/song is viewed -->
+        <div id="filtering">
+          <select id="selectArtist">Select Artist>
+          </select>
+          <select id="selectAlbum">Select Album</select>
+          <input type="button" id="filter" value="Filter"></input>
+        </div>
+
   <!-- </div>         -->
-  <!-- List of songs.  two more files in JSON to add more songs to list --> 
-      <div class="col-md-8 list-music">
+  <!-- List of songs, two more files in JSON to add more songs to list -->
+      <div class="col-md-6 list-music">
         <div id="right-side">
         </div><!--closes class="right-side"-->
       </div><!--closes list-music column -->
-
     </div><!--closes row of whole page-->
+   </div>
 
 <!-- the start of script tags used -->
  <script data-main="javascripts/entry.js" src="./lib/bower_components/requirejs/require.js"></script>

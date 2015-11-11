@@ -4,7 +4,8 @@ define(["jquery"],
     	getAjaxData: function(dataConverter) {
     	
 			    $.ajax({
-			       url: "https://boiling-fire-9070.firebaseio.com/.json"
+			       url: "https://boiling-fire-9070.firebaseio.com/.json",
+             method: "GET"
 			    }).done(function(songList){
 			        dataConverter(songList); 
               console.log(songList);		
