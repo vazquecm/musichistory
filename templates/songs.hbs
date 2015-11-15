@@ -1,28 +1,10 @@
 {{#each songs}}
-	<div class="row">
-		<div class="col-md-4">
-   		<h3 class="col-md-4">{{title}}</h3>
+		<div>
+   		<h3>{{title}}</h3>
   			<ul>
-     		 <li "col-md-6">{{artist}}</li>
-      		<li "col-md-3">{{album}}</li>
+     		 <li>{{artist}}</li>
+      		<li>{{album}}</li>
   			</ul>
   	</div>
-  </div>
   <input type="button" id="delete" value="Delete"></input>
 {{/each}}
-
-
-{{!-- {{#each books}}
-  <div class="row">
-	<div class="col-md-3">
-	  <h3>{{ title }}</h3>
-	  <h4> by {{author}}</h4>
-    </div>
-  <p class="col-md-6">{{synopsis}}</p>
-  	<div class="col-md-3">
-  <h4>{{ type }}</h4>
-  <p>Published by {{publisher}} in {{year}}</p>
-  	</div>
-  </div>
-{{/each}}
- --}}

@@ -24,35 +24,5 @@ $("#adding").click(function(){
     }).done(function() {
       console.log("something in firebase");
     });
-
-
-
-
   });
- 
-
-
-
-
-
-
-
-// $.ajax({
-//   url: "https://boiling-fire-9070.firebaseio.com/total-songs.json"
-//   });
-
-//   key: "value",  
-//   method: "POST",
-//   data: JSON.stringify(newSong)
-//   .done(function(addedSong) {
-//   title = "";
-//   artist = "";
-//   album = "";
-//   console.log("your new song is", addedSong)
-//  })
-
-// });  
-
-
-
 });

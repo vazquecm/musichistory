@@ -70,14 +70,5 @@ define(["jquery", "populate-songs", "hbs!../templates/songs", "add-song", "lodas
 		var oldList = populateSongs.getNewSong();
 		console.log("chosenTitle", chosenTitle);
 	});
-
-/// clears the data that the user inputed for selections ///
-	// $("#filter").click(function() {
-	// 	console.log("working now?");       
- //    	$("button").val('');
-// });
-
-
-	
   
 });

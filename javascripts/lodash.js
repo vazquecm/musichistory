@@ -1,4 +1,4 @@
-define(["lodash"], funtion(_)); {
+define(["lodash"], function(_) {
 
     return function(allSongsArray) {
         //non-chained syntax
@@ -16,9 +16,9 @@ define(["lodash"], funtion(_)); {
         uniqueAlbums: uniqueAlbums
     };
  }
-}
+})
 
-define(["lodash"], funtion(_) {
+define(["lodash"], function(_) {
         return function(allSongsArray) {
             var uniqueArtists = _.chain(allSongsArray)
                                  .uniq("artist")
@@ -34,10 +34,10 @@ define(["lodash"], funtion(_) {
             uniqueAlbums: uniqueAlbums
         }                 
     };
-});
-
 var matchingAlbums = _.chain(config.originalSongsArray)
                      .filter((song) => song.artist === selectedArtist)
                      .uniq('album.name')
                      .pluck('album')
                      .value();
+});
+
