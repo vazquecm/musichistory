@@ -48,5 +48,5 @@ define(["jquery", "firebase", "hbs!../templates/songs"],
         $("#artist option:selected").html(songs({songs:allSongsObject}));  
           console.log();
 
-    })
+    });
 });
