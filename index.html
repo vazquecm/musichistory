@@ -25,6 +25,7 @@
         <div id="left-side"><!--removed class="my-hidden"-->
           <h3>Adding Your Music</h3>
           <ul>
+          <!--  the options are provided through handlebars templates  -->
             <li>Artist:</li>
             <input type="text" id="artist" name="enter artist"></input>
             <li>Song:</li>
@@ -36,20 +37,20 @@
         </div>
       </div>
 
-<!-- this section is for filtering by artist and song, the user picks and then just that artist/song is viewed -->
+<!-- this section is for filtering by artist and song, the user picks and then just that artist/song is viewed. --> 
         <div id="filtering">
           <h5>Select Artist</h5>
-            <select id="selectArtist">Select Artist>
+            <select id="selectArtist">
             </select>
-          <h5>Select Title</h5>
-            <select id="selectAlbum">Select Album</select>
-          <h5>Select Album</h5>  
-            <select id="selectTitle">Select Title</select>
+          <h5>Select Album</h5>
+            <select id="selectAlbum"></select>
+          <h5>Select Title</h5>  
+            <select id="selectTitle"></select>
             <input type="button" id="filter" value="Clear Filter"></input>
         </div>
 
   <!-- </div>         -->
-  <!-- List of songs, two more files in JSON to add more songs to list -->
+  <!-- List of songs from firebase API and handlebars template of songs -->
       <div class="col-md-6 list-music">
         <div id="right-side">
         </div><!--closes class="right-side"-->

@@ -7,15 +7,15 @@
 (done) Populate the form fields with data from your API.    
 When "Filter" button is pressed, update the song list with songs that only match the specified criteria.  
     
-The delete button for removing a song, artist, and album needs to be fixed.
+The delete button for removing a song, artist, and album needs to be functional.
 
 ====
 
-Made the add-song functionality interact with the Firebase API.  
+(done) Make the add-song functionality interact with the Firebase API.  
 
-Made 2 dropdown boxes to hold album and artist...lets the user choose from the selected options.  
+(done) Make 3 dropdown boxes to hold album, title, and artist...lets the user choose from the selected options. Done with using Firebase data to input into the DOM.  
+(done) The artist, album, and title option boxes that the user selects now populate into the DOM.    
 
-Got third dropdown box to hold song titles for user to make selection.  
 
 
-Next task is to create filter panel in DOM and make responsive to Firebase API.
+(done) Next task is to create filter panel in DOM and make responsive to Firebase API.
