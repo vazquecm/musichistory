@@ -1,3 +1,5 @@
+/// this isn't used anymore because we're using firebase to store all song information, thus just calling to it and not to both JSON files ///
+
 define(["jquery"], 
   function($) {
     return {
@@ -12,4 +14,3 @@ define(["jquery"],
 	
    };
  });
-/// this isn't used anymore because we're using firebase to store all song information, thus just calling to it and not to both JSON files ///

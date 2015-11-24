@@ -1,3 +1,5 @@
+/// this module lets the user add "artist, title, and album" and then add these choices to the firebase database ///
+
 define(["jquery"], function($) {
 
 $("#adding").click(function(){

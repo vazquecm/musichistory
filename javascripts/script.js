@@ -1,3 +1,5 @@
+/// this module allows the "view music" to be seen when page first loads, it also hides the "add view" until the user specifically chooses this option ///
+
 define(["jquery", "populate-songs", "hbs!../templates/songs", "add-song", "lodash"], 
   function($, populateSongs, songs, addSong, lodash) { 
 
