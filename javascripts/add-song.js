@@ -13,7 +13,7 @@ $("#adding").click(function(){
                       title: addedSong,
                       artist: addedArtist,
                       album: addedAlbum
-                  
+                    
     };
     console.log("add-song.js", newSong);
 

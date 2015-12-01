@@ -1,9 +1,9 @@
-define(["jquery", "firebase", "hbs!../templates/songs", "hbs!../templates/artist", "hbs!../templates/album", "hbs!../templates/title"], 
-  function($, firebase, songsRightSideTemplate, artistOptionBoxTemplate, albumOptionBoxTemplate, titleOptionBoxTemplate)  {
+define(["jquery", "firebase", "hbs!../templates/songs", "hbs!../templates/artist", "hbs!../templates/album", "hbs!../templates/title", "hbs!../templates/filterSongs"], 
+  function($, firebase, songsRightSideTemplate, artistOptionBoxTemplate, albumOptionBoxTemplate, titleOptionBoxTemplate, filterSongs)  {
 
    /// create a reference to firebase, don't use the JSON file extension ////
    var myFirebaseRef = new firebase("https://boiling-fire-9070.firebaseio.com");
-
+  
  /// listens for when anything changes on the "songs" key ///
    myFirebaseRef.child("songs").on("value", function(snapshot) {
    console.log("working?");
@@ -54,16 +54,34 @@ define(["jquery", "firebase", "hbs!../templates/songs", "hbs!../templates/artist
         console.log(songsKey);
 
     /// if keys match to user selection then the selected choice is added to the DOM
-        newSongList.artist === selectArtist
+        newSongList.artist === selectArtist;
           console.log("selectArtist", selectArtist);
-          newSongList.album === selectAlbum
+          newSongList.album === selectAlbum;
           console.log("selectAlbum", selectAlbum);
-          newSongList.title === selectTitle
+          newSongList.title === selectTitle;
           console.log("selectTitle", selectTitle);     
         }
       }
-    })
 
-         
- });
-    
+    /// this function allows the user to filter only the options selected from the selection boxes and displays them on the page.  
+      $("body").on("click","#filter", function() {
+        console.log("lets filter some options");
+        var filterSongList = {};
+        filterSongList.artist = selectArtist;
+        filterSongList.album = selectAlbum;
+        filterSongList.title = selectTitle;
+        console.log("filterSongList", filterSongList);
+
+        require(["hbs!../templates/filterSongs"], function(template) {
+          $("#right-side").html(template(filterSongList));
+
+          })
+      })
+
+
+        });
+
+});
+
+// });
+       

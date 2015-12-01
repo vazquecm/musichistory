@@ -16,8 +16,8 @@ requirejs.config({
 });
 
 require (
-  ["script", "bootstrap", "x"],
-  function(script, bootstrap, x) {
+  ["script", "bootstrap"],
+  function(script, bootstrap) {
 
 });
 

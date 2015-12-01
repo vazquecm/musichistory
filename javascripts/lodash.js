@@ -15,7 +15,7 @@ define(["lodash"], function(_) {
         uniqueArtists: justTheArtists,
         uniqueAlbums: uniqueAlbums
     };
- };
+ };  
 });
 
 define(["lodash"], function(_) {
@@ -34,10 +34,6 @@ define(["lodash"], function(_) {
             uniqueAlbums: uniqueAlbums
         };                 
     };
-        // var matchingAlbums = _.chain(config.originalSongsArray)
-        //              .filter((song) => song.artist === selectedArtist)
-        //              .uniq('album.name')
-        //              .pluck('album')
-        //              .value();
+        
 });
 
