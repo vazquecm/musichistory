@@ -77,11 +77,12 @@ define(["jquery", "firebase", "hbs!../templates/songs", "hbs!../templates/artist
 
           })
       })
+    ///this function will allow the user to delete the selection of choice off of the main page.  need to get the "parent" of the delete button and use it to delete the selected options. only removes from the DOM.
+      $("body").on("click","#delete", function() {
+        console.log("are we deleting?");
+        $(this).parent().remove();
 
+          })
 
-        });
-
+      })      
 });
-
-// });
-       
