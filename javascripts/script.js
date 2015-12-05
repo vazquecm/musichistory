@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 		for (var i = 0; i < songArray.length; i++) {
 			var currentSong = songArray[i];
-
+  
 			songElementString = "<div>";
 			songElementString += "<h3>"+currentSong.title+"</h3>";
 			songElementString += "<p>"+currentSong.artist+"</p>";
@@ -22,79 +22,14 @@ $(document).ready(function() {
 		};
 	}
 
-	$.ajax({
-		url: "data/songs.json"
-	}).done(dataConverter);
-
+		$scope.songArray = songListContainer.append(songElementString);
+		console.log("songArray", songArray); 
+	
 	
 });
 
 // Delete button on "list music" song row  //
-
 	$(document).on('click', '.delete', function(event) {
 		event.target.remove("song-list");
 		console.log('click', event);
 });	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Button for "more-songs"  //
-
-// var moreSongs = "more-songs";
-
-// 	$(function(){
-//     	$("<button>Delete</button>").click(function(){
-//         var moreSongs= $("<input type='button' value='More Songs'>");
-//         console.log(moreSongs);
-//     });
-// });
-
-// 	$.ajax({
-//     url: "data/more-songs.json"
-//   }).done(dataConverter);
-
-// });
-
-
-// Adding music //
-
-// 	var addMusic = "Add Music";
-
-// 	$("#link-add").click(function(){
-// 	var addMusic = $(addMusic);
-// 	console.log(addMusic); 	    
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,44 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Music History</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Music History - Angular</title>
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
-<body>
- <div id="heading">
+
+<body ng-app="app">
+
+  <div id="heading">
     <ul>
-      <li>Music</li>
-      <li><a href="#" id="link-add">Add Music</a></li>
-      <li><a href="#" id="link-list">List Music</a></li>
+      <li>Music History</li>
+      <li><a href="#/songs/new" id="link-add">Add Music</a></li>
+      <li><a href="#/songs/list" id="link-list">List Music</a></li>
     </ul>
   </div>
 
-<!--    SECOND BOX   -->
+  <div ng-view></div>
 
-<div id="choices">
-    <li>Song Length:</li>
-        <input type="range" name="temperature-range" min="15" max="25" step="0.5" value="18.5">
-    <li>Artist:</li>
-        <input type="text" name="enter artist"></input>
-    <li>Song:</li>
-        <input type="text" name="enter song"></input>
-    <li>Album:</li>
-        <input type="text" name="enter album"></input>
-        <input type="button" value="Add"></input>
-</div>
-
-   <!--         THIRD BOX           -->
-
-   <div id="song-list"></div>
-    <button class="list">More Songs</button>
-
-   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
- </body>
+<!-- angularjs script tags -->
+<script src="lib/bower_components/angular/angular.min.js"></script>
+<script src="lib/bower_components/angular-route/angular-route.js"></script>
 
 
+<!-- firebase script tag -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
 
+<!-- angularfire script tag -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
 
- 
+<script src="app/app.js"></script>
+<script src="factories/songFactory.js"></script>
+<script src="app/controllers/songCtrl.js"></script>
+<script src="app/controllers/songDetailCtrl.js"></script>
+<script src="app/controllers/songFormCtrl.js"></script>
+<script src="app/controllers/songListCtrl.js"></script>
+<script src="app/controllers/songDeleteCtrl.js"></script>
+
+</body>
+</html>

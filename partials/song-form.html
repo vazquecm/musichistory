@@ -1,0 +1,17 @@
+<!-- this module is a template html that will only contain the song form where a user will be able to add a specific song to their collection -->
+
+<section id="song-form">
+  <div>
+    Song Title: <input type="text" ng-model="newSong.title" />
+  </div>
+
+  <div>
+    Artist Name: <input type="text" ng-model="newSong.artist" />
+  </div>
+  
+  <div>
+    Album Name: <input type="text" ng-model="newSong.album" />
+  </div>
+  <button id="addSong" ng-click="addSong()">Add Song</button>
+</section>
+

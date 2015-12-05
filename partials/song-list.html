@@ -1,0 +1,22 @@
+-<!--this is an html template that will be used only for loading the song list to the DOM -->
+<section id="song-list">
+<div id="filter">
+  <input type="text" ng-model="searchText" />
+</div>
+<div ng-repeat="song in songs | orderBy:'title' | filter: searchText">
+
+	<div>  
+	  <a href="#/songs/detail/{{ thing.$id }}" >Title: {{ song.title }}</a>
+	</div>
+
+	<div>
+	  <a href="#/songs/detail/{{ thing.$id }}" >Artist: {{ song.artist }}</a>
+	</div>
+
+	<div>
+	  <a href="#/songs/detail/{{ thing.$id }}" >Album: {{ song.album }}</a>
+	</div>
+	<a href="#/songs/delete" ><button id="deleteSong" ng-click="deleteSong(song)">Delete</button></a>
+
+</div>
+</section>

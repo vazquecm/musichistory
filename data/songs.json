@@ -1,32 +1,68 @@
 {
   "songs": [
     {
+      "id": 1,
       "title": "Strength, Courage, & Wisdom",
       "artist": "Indie Arie",
       "album": "Acoustic Soul"
     },
     {
+      "id": 2,
       "title": "Free Me",
       "artist": "Joss Stone",
       "album": "Colour Me Free"      
     },
     {
+      "id": 3,
       "title": "Crystallize",
       "artist": "Lindsey Sterling",
       "album": "Lindsey Sterling"
     },
     {
+      "id": 4,
       "title": "Soulful Strut",
       "artist": "Young-Holt Unlimited",
       "album": "Young-Holt Unlimited"
     },
     {
+      "id": 5,
       "title": "Little Numbers",
       "artist": "Boy",
       "album": "Mutual Friends"
+    },
+    {
+      "id": 6,
+      "title": "Hello",
+      "artist": "Adele",
+      "album": "25"
+    },
+    {
+      "id": 7,
+      "title": "The Man",
+      "artist": "Aloe Blacc",
+      "album": "Lift Your Spirit"      
+    },
+    {
+      "id": 8,
+      "title": "Bahia",
+      "artist": "Angelique kidjo",
+      "album": "Black Ivory Soul"
+    },
+    {
+      "id": 9,
+      "title": "Can't Buy Me Love",
+      "artist": "The Beatles",
+      "album": "1"
+    },
+    {
+      "id": 10,
+      "title": "Try",
+      "artist": "Colbie Cailllat",
+      "album": "Gypsy Heart"
     }
   ]
 }
+  
 
 
 
